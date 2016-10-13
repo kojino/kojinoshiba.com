@@ -1,0 +1,27 @@
+body {
+  all: none;
+  color: white;
+  margin: 0;
+  background-image: url("ignite.jpeg");
+  background-size: 100%;
+  background-position: top; }
+  body #top {
+    height: 500px;
+    margin: 0;
+    text-align: center; }
+    body #top h1 {
+      font-size: 50px;
+      margin-top: 80px; }
+    body #top #icons {
+      margin-top: 20px;
+      display: inline-block;
+      width: 300px;
+      text-align: center; }
+      body #top #icons a {
+        display: inline-block;
+        margin-right: 2%; }
+        body #top #icons a img {
+          width: 20px;
+          height: 20px; }
+
+/*# sourceMappingURL=styles.css.map */

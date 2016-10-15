@@ -1,0 +1,35 @@
+Kojin Oshiba
+github,facebook,linkedin
+
+Interested? contact@kojinoshiba.com!
+
+About me:
+A 20 year old developer.
+Dropped out of Harvard, now in San Francisco.
+
+
+engineering
+
+Skills:
+Data science and machine learning in python.
+Full stack web in Rails and Javascript.
+Mobile app in swift.
+
+Works:
+Data Engineer at Gradle (Android build tool)
+Natural Language Processing at Retty (Japanese yelp)
+Freelance Rails work for 2 startups
+
+entrepreneurship
+
+Projects I founded:
+MOOC for high school students; Grand Prize at the top Japanese pitch contest
+Non profit to support Japanese students study abroad
+English debate competition held in Tokyo, Osaka, and Fukuoka.
+
+Works:
+Associate at East Ventures (the top seed VC in Japan)
+
+Fun fact:
+Backpacked 6 countries in Africa.
+Lived in Tokyo for 18 years.

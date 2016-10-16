@@ -26,4 +26,7 @@ jsPlumb.ready(function() {
          }, common);
        }
     }
+    $(window).resize(function(){
+         jsPlumb.revalidate(this);
+    });
 });

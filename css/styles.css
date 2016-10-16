@@ -187,23 +187,24 @@ body {
     margin-left: 25%;
     width: 75%;
     float: left;
+    background-color: #3FB0AC;
+    overflow-x: hidden;
     overflow-y: scroll; }
     body .right-wrapper #top {
-      position: relative;
       height: 100vh;
-      background-image: url(../images/pink.png);
-      background-size: cover;
       color: black;
       font-family: Avenir Next; }
       body .right-wrapper #top .typewriter {
         text-align: center;
         margin: auto;
-        /* The typing effect */
-        /* The typewriter cursor effect */ }
+        position: relative; }
         body .right-wrapper #top .typewriter h2 {
-          margin: 0;
+          position: absolute;
+          margin-top: 15%;
+          left: 5%;
+          right: 5%;
+          display: inline-block;
           color: white;
-          font-size: 150%;
           display: flex;
           overflow: hidden;
           /* Ensures the content is not revealed until the animation */
@@ -213,12 +214,14 @@ body {
           /* Keeps the content on a single line */
           letter-spacing: .15em;
           /* Adjust as needed */
-          animation: typing 2.5s steps(40, end), blink-caret 1s step-end infinite; }
+          animation: typing 2.5s steps(40, end), blink-caret 1s step-end infinite;
+          /* The typing effect */
+          /* The typewriter cursor effect */ }
 @keyframes typing {
   from {
-    width: 0; }
+    width: 0%; }
   to {
-    width: 50%; } }
+    width: 100%; } }
 @keyframes blink-caret {
   from, to {
     border-color: transparent; }
@@ -229,14 +232,14 @@ body {
         bottom: 0;
         height: 70%;
         width: 30%;
-        left: 45%;
+        left: 54%;
         background-image: url("../images/kojin_a.png");
         background-size: contain;
         background-repeat: no-repeat; }
         body .right-wrapper #top .kojin:hover {
           background-image: url("../images/kojin_b.png");
-          background-size: cover;
-          left: 40%; }
+          background-size: contain;
+          left: 50%; }
       body .right-wrapper #top img {
         width: 5%;
         height: 5%;
@@ -246,49 +249,54 @@ body {
         -webkit-filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23));
         filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)); }
     body .right-wrapper #software {
-      margin: 0;
-      background: white;
+      position: relative;
+      width: 100%;
+      background-color: white;
       height: 100vh;
-      text-align: center;
       font-family: Avenir Next; }
       body .right-wrapper #software .product {
+        position: absolute;
         float: left;
-        width: 45%;
-        height: 45%;
+        width: 44%;
+        height: 44%;
         background-color: white; }
         body .right-wrapper #software .product:nth-child(1) {
-          margin-top: 4%;
-          margin-left: 4%;
+          top: 4%;
+          left: 4%;
           background-image: url(../images/jiraffe.png);
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center; }
         body .right-wrapper #software .product:nth-child(2) {
-          margin-right: 4%;
-          margin-top: 4%;
-          margin-left: 2%;
+          top: 4%;
+          right: 4%;
           background-image: url(../images/network.png);
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
           background-color: black; }
         body .right-wrapper #software .product:nth-child(3) {
-          margin-top: 2%;
-          margin-left: 4%;
-          margin-bottom: 4%; }
+          left: 4%;
+          bottom: 4%;
+          background-image: url(../images/jiraffe.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center; }
         body .right-wrapper #software .product:nth-child(4) {
-          margin-top: 2%;
-          margin-left: 2%;
-          margin-bottom: 4%;
-          margin-right: 4%; }
+          bottom: 4%;
+          right: 4%;
+          background-image: url(../images/jiraffe.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center; }
         body .right-wrapper #software .product:hover .desc {
           opacity: 0.8; }
         body .right-wrapper #software .product .desc {
-          background-color: #06090E;
           position: relative;
           width: 100%;
           height: 100%;
           opacity: 0;
+          background-color: black;
           transition: 400ms;
           transition-delay: 200ms;
           color: white;
@@ -302,64 +310,65 @@ body {
             width: 70%;
             color: #B8E986; }
     body .right-wrapper #machine {
-      position: relative;
       height: 100vh;
-      background-color: #06090E;
       opacity: 85%;
-      color: #DDDFD4;
-      font-family: Avenir Next;
-      border: 1px solid gray;
-      text-align: center; }
-      body .right-wrapper #machine h3 {
-        margin: 0; }
+      color: white;
+      font-family: Avenir Next; }
+      body .right-wrapper #machine #foundation, body .right-wrapper #machine #work {
+        height: 60%;
+        margin-top: 10%; }
+      body .right-wrapper #machine #training {
+        height: 80%; }
       body .right-wrapper #machine #foundation, body .right-wrapper #machine #training, body .right-wrapper #machine #work {
         width: 33%;
-        height: 80%;
-        float: left;
-        margin: auto; }
-      body .right-wrapper #machine .item {
-        border-radius: 50%;
-        width: 60%;
-        margin-left: 20%;
-        margin-right: 20%;
-        padding-top: 60%;
-        background-color: #DDDFD4; }
-        body .right-wrapper #machine .item:hover .desc {
-          opacity: 0.8; }
-        body .right-wrapper #machine .item .container {
+        text-align: center;
+        float: left; }
+        body .right-wrapper #machine #foundation .item, body .right-wrapper #machine #training .item, body .right-wrapper #machine #work .item {
           position: relative;
-          width: 100%; }
-          body .right-wrapper #machine .item .container img {
+          display: inline-block;
+          width: 60%;
+          height: 0;
+          padding: 30% 0;
+          border-radius: 50%;
+          background-color: white;
+          margin: auto; }
+          body .right-wrapper #machine #foundation .item img, body .right-wrapper #machine #training .item img, body .right-wrapper #machine #work .item img {
+            width: 40%;
+            text-align: center;
+            font-size: 100%;
+            margin: 0;
+            position: absolute;
+            left: 30%;
+            top: 15%; }
+          body .right-wrapper #machine #foundation .item p, body .right-wrapper #machine #training .item p, body .right-wrapper #machine #work .item p {
+            color: black;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            font-size: 100%;
+            margin: 0;
+            position: absolute;
+            left: 0;
+            top: 65%; }
+          body .right-wrapper #machine #foundation .item:hover .desc, body .right-wrapper #machine #training .item:hover .desc, body .right-wrapper #machine #work .item:hover .desc {
+            opacity: 0.8; }
+          body .right-wrapper #machine #foundation .item .desc, body .right-wrapper #machine #training .item .desc, body .right-wrapper #machine #work .item .desc {
             position: absolute;
             top: 0;
-            width: 20%;
-            height: auto; }
-          body .right-wrapper #machine .item .container p {
-            color: #173E43;
-            position: absolute;
-            top: 0; }
-        body .right-wrapper #machine .item .desc {
-          background-color: #06090E;
-          position: relative;
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          transition: 400ms;
-          transition-delay: 200ms;
-          color: white;
-          text-align: center;
-          margin: auto; }
-      body .right-wrapper #machine #foundation .item, body .right-wrapper #machine #work .item {
-        margin-top: 30%;
-        margin-bottom: 30%; }
-      body .right-wrapper #machine #training .item {
-        margin-top: 5%;
-        margin-bottom: 0; }
+            width: 100%;
+            height: 0;
+            padding: 50% 0;
+            border-radius: 50%;
+            background-color: #06090E;
+            opacity: 0;
+            transition: 400ms;
+            color: white; }
     body .right-wrapper #education {
       height: 100vh;
       color: black;
       margin: 0;
-      background: white;
+      background-image: url(../images/background_white_div.png);
+      background-size: cover;
       height: 100vh;
       text-align: center;
       font-family: Avenir Next;

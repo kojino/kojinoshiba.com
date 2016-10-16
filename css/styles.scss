@@ -1,0 +1,436 @@
+body {
+    animation : none;
+    animation-delay : 0;
+    animation-direction : normal;
+    animation-duration : 0;
+    animation-fill-mode : none;
+    animation-iteration-count : 1;
+    animation-name : none;
+    animation-play-state : running;
+    animation-timing-function : ease;
+    backface-visibility : visible;
+    background : 0;
+    background-attachment : scroll;
+    background-clip : border-box;
+    background-color : transparent;
+    background-image : none;
+    background-origin : padding-box;
+    background-position : 0 0;
+    background-position-x : 0;
+    background-position-y : 0;
+    background-repeat : repeat;
+    background-size : auto auto;
+    border : 0;
+    border-style : none;
+    border-width : medium;
+    border-color : inherit;
+    border-bottom : 0;
+    border-bottom-color : inherit;
+    border-bottom-left-radius : 0;
+    border-bottom-right-radius : 0;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-image : none;
+    border-left : 0;
+    border-left-color : inherit;
+    border-left-style : none;
+    border-left-width : medium;
+    border-radius : 0;
+    border-right : 0;
+    border-right-color : inherit;
+    border-right-style : none;
+    border-right-width : medium;
+    border-spacing : 0;
+    border-top : 0;
+    border-top-color : inherit;
+    border-top-left-radius : 0;
+    border-top-right-radius : 0;
+    border-top-style : none;
+    border-top-width : medium;
+    bottom : auto;
+    box-shadow : none;
+    box-sizing : content-box;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : inherit;
+    columns : auto;
+    column-count : auto;
+    column-fill : balance;
+    column-gap : normal;
+    column-rule : medium none currentColor;
+    column-rule-color : currentColor;
+    column-rule-style : none;
+    column-rule-width : none;
+    column-span : 1;
+    column-width : auto;
+    content : normal;
+    counter-increment : none;
+    counter-reset : none;
+    cursor : auto;
+    direction : ltr;
+    display : inline;
+    empty-cells : show;
+    float : none;
+    font : normal;
+    font-family : inherit;
+    font-size : medium;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : normal;
+    height : auto;
+    hyphens : none;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style : none;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : 0;
+    margin-bottom : 0;
+    margin-left : 0;
+    margin-right : 0;
+    margin-top : 0;
+    max-height : none;
+    max-width : none;
+    min-height : 0;
+    min-width : 0;
+    opacity : 1;
+    orphans : 0;
+    outline : 0;
+    outline-color : invert;
+    outline-style : none;
+    outline-width : medium;
+    overflow : visible;
+    overflow-x : visible;
+    overflow-y : visible;
+    padding : 0;
+    padding-bottom : 0;
+    padding-left : 0;
+    padding-right : 0;
+    padding-top : 0;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+    perspective : none;
+    perspective-origin : 50% 50%;
+    position : static;
+    /* May need to alter quotes for different locales (e.g fr) */
+    quotes : '\201C' '\201D' '\2018' '\2019';
+    right : auto;
+    tab-size : 8;
+    table-layout : auto;
+    text-align : inherit;
+    text-align-last : auto;
+    text-decoration : none;
+    text-decoration-color : inherit;
+    text-decoration-line : none;
+    text-decoration-style : solid;
+    text-indent : 0;
+    text-shadow : none;
+    text-transform : none;
+    top : auto;
+    transform : none;
+    transform-style : flat;
+    transition : none;
+    transition-delay : 0s;
+    transition-duration : 0s;
+    transition-property : none;
+    transition-timing-function : ease;
+    unicode-bidi : normal;
+    vertical-align : baseline;
+    visibility : visible;
+    white-space : normal;
+    widows : 0;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+    a {
+      text-decoration: none;
+      &:link {
+        color: currentColor;
+      }
+      &:visited {
+        color:currentColor;
+      }
+      &:hover {
+        color:currentColor;
+      }
+      &:active {
+        color:currentColor;
+      }
+
+    }
+
+    .left-wrapper {
+      position: fixed;
+      background-color: #3FB0AC;
+      width: 25%;
+      height: 100vh;
+      float:left;
+      margin:auto;
+      text-align: center;
+      color: white;
+      font-family: Avenir Next;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      .basic-info {
+        h1 {
+          font-size: 250%;
+          margin-top: 30%;
+        }
+        img {
+          height: 25px;
+          width: auto;
+        }
+        a {
+          &:not(:last-child) {
+            margin-right: 5%;
+          }
+        }
+
+        address {
+          margin-top: 3%;
+        }
+      }
+      .categories {
+        margin-top: 50%;
+        h2 {
+          font-size: 125%;
+          margin-bottom: 10%;
+        }
+      }
+    }
+    .right-wrapper {
+      margin-left: 25%;
+      width: 75%;
+      float:left;
+      overflow-y: scroll;
+      #top {
+        position: relative;
+        height: 100vh;
+        background-image: url(../images/pink.png);
+        background-size: cover;
+        color: black;
+        font-family: Avenir Next;
+        .typewriter{
+          text-align: center;
+          margin: auto;
+          h2 {
+            margin: 0;
+            color: white;
+            font-size: 150%;
+            // type writer effect below:
+            display: flex;
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange; /* The typwriter cursor */
+            white-space: nowrap; /* Keeps the content on a single line */
+            // margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em; /* Adjust as needed */
+            animation:
+              typing 2.5s steps(40, end),
+              blink-caret 1s step-end infinite;
+          }
+          /* The typing effect */
+          @keyframes typing {
+            from { width: 0 }
+            to { width: 50% }
+          }
+          /* The typewriter cursor effect */
+          @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange; }
+          }
+        }
+        .kojin {
+          position: absolute;
+          bottom: 0;
+          height: 70%;
+          width: 30%;
+          left: 45%;
+          background-image: url("../images/kojin_a.png");
+          background-size:contain;
+          background-repeat: no-repeat;
+          &:hover {
+            background-image: url("../images/kojin_b.png");
+            background-size:cover;
+            left: 40%;
+          }
+        }
+        img {
+          width: 5%;
+          height: 5%;
+          position: absolute;
+          bottom: 3%;
+          right: 3%;
+          -webkit-filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23));
+          filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23));
+        }
+      }
+      #software {
+        margin: 0;
+        // opacity: 0.85;
+        background: white;
+        // background: #06090E;
+        height: 100vh;
+        text-align: center;
+        font-family: Avenir Next;
+        .product {
+          float: left;
+          width:45%;
+          height:45%;
+          background-color:white;
+          &:nth-child(1) {
+            margin-top: 4%;
+            margin-left: 4%;
+            background-image: url(../images/jiraffe.png);
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          &:nth-child(2) {
+            margin-right: 4%;
+            margin-top: 4%;
+            margin-left: 2%;
+            background-image: url(../images/network.png);
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: black;
+          }
+          &:nth-child(3) {
+            margin-top: 2%;
+            margin-left: 4%;
+            margin-bottom: 4%;
+          }
+          &:nth-child(4) {
+            margin-top: 2%;
+            margin-left: 2%;
+            margin-bottom: 4%;
+            margin-right: 4%;
+          }
+          &:hover .desc{
+            opacity: 0.8;
+          }
+
+          .desc {
+            background-color: #06090E;
+            position: relative;
+            width:100%;
+            height:100%;
+            opacity: 0;
+            transition: 400ms;
+            transition-delay: 200ms;
+            color: white;
+            text-align: center;
+            margin: auto;
+            h3 {
+              margin:0;
+            }
+            p {
+              width: 70%;
+            }
+            .tag {
+              width: 70%;
+              color:#B8E986;
+            }
+          }
+        }
+      }
+      #machine {
+        position: relative;
+        height: 100vh;
+        background-color: #06090E;
+        opacity: 85%;
+        color: #DDDFD4;
+        font-family: Avenir Next;
+        border: 1px solid gray;
+        text-align: center;
+        h3 {
+          margin: 0;
+        }
+        #foundation,#training,#work {
+          width: 33%;
+          height: 80%;
+          float:left;
+          margin: auto;
+        }
+        .item {
+          border-radius: 50%;
+          width: 60%;
+          margin-left: 20%;
+          margin-right: 20%;
+          padding-top:60%;
+          background-color: #DDDFD4;
+          &:hover .desc {
+            opacity: 0.8;
+          }
+          .container {
+            position: relative;
+            width:100%;
+            img {
+              position: absolute;
+              top: 0;
+              width:20%;
+              height:auto;
+            }
+            p {
+              color: #173E43;
+              position: absolute;
+              top: 0;
+            }
+          }
+          .desc {
+            background-color: #06090E;
+            position: relative;
+            width:100%;
+            height:100%;
+            opacity: 0;
+            transition: 400ms;
+            transition-delay: 200ms;
+            color: white;
+            text-align: center;
+            margin: auto;
+          }
+        }
+        #foundation .item, #work .item {
+          margin-top: 30%;
+          margin-bottom: 30%;
+        }
+        #training {
+          // margin-top: 5%;
+        }
+        #training .item {
+          margin-top: 5%;
+          margin-bottom: 0;
+        }
+      }
+      #education {
+        height: 100vh;
+        color: black;
+        margin: 0;
+        background: white;
+        height: 100vh;
+        text-align: center;
+        font-family: Avenir Next;
+        padding-top: 5%;
+        .project {
+          height:29%;
+          width:90%;
+          margin-left: 5%;
+          margin-top: 3%;
+          background-color: green;
+          .desc {
+            width: 40%;
+            height: 100%;
+            background-color: yellow;
+          }
+          image {
+            width: 60%;
+            height: 100%;
+          }
+        }
+      }
+    }
+}

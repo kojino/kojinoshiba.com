@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+    <style>
+        #diagramContainer {
+            padding: 20px;
+            width:75%; height: 200px;
+            border: 1px solid gray;
+        }
+        #foundation,#training,#work {
+          width: 33%;
+          float:left;
+        }
+
+        .item {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="diagramContainer">
+      <div id="foundation">
+        <div id="f-1" class="item"></div>
+        <div id="f-2" class="item"></div>
+      </div>
+      <div  id="training">
+        <div id="t-1" class="item"></div>
+        <div id="t-2" class="item"></div>
+        <div id="t-3" class="item"></div>
+      </div>
+      <div id="work">
+        <div id="w-1" class="item"></div>
+        <div id="w-2" class="item"></div>
+      </div>
+
+
+    </div>
+
+    <p><a href="http://www.freedevelopertutorials.com/jsplumb-tutorial/introduction/">Visit the full jsPlumb-Tutorial</a> to learn it and see many more interesting examples.</p>
+
+    <script src="js/jsPlumb-2.1.7-min.js"></script>
+    <script src="js/nn.js"></script>
+</body>
+</html>

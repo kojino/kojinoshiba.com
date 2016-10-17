@@ -251,7 +251,7 @@ body {
     body .right-wrapper #software {
       position: relative;
       width: 100%;
-      background-color: white;
+      background-color: #dddfd4;
       height: 100vh;
       font-family: Avenir Next; }
       body .right-wrapper #software .product {
@@ -290,24 +290,31 @@ body {
           background-repeat: no-repeat;
           background-position: center; }
         body .right-wrapper #software .product:hover .desc {
-          opacity: 0.8; }
+          background-color: rgba(0, 0, 0, 0.8);
+          opacity: 1; }
         body .right-wrapper #software .product .desc {
           position: relative;
           width: 100%;
           height: 100%;
           opacity: 0;
-          background-color: black;
+          background-color: transparent;
           transition: 400ms;
           transition-delay: 200ms;
           color: white;
           text-align: center;
           margin: auto; }
           body .right-wrapper #software .product .desc h3 {
+            padding-top: 10%;
             margin: 0; }
+          body .right-wrapper #software .product .desc hr {
+            width: 80%; }
           body .right-wrapper #software .product .desc p {
-            width: 70%; }
+            padding-top: 10%;
+            padding-left: 15%;
+            padding-right: 15%; }
           body .right-wrapper #software .product .desc .tag {
-            width: 70%;
+            padding-left: 15%;
+            padding-right: 15%;
             color: #B8E986; }
     body .right-wrapper #machine {
       height: 100vh;
@@ -333,25 +340,34 @@ body {
           background-color: white;
           margin: auto; }
           body .right-wrapper #machine #foundation .item img, body .right-wrapper #machine #training .item img, body .right-wrapper #machine #work .item img {
-            width: 40%;
+            width: 35%;
             text-align: center;
             font-size: 100%;
             margin: 0;
             position: absolute;
-            left: 30%;
+            left: 32.5%;
             top: 15%; }
+          body .right-wrapper #machine #foundation .item .retty, body .right-wrapper #machine #training .item .retty, body .right-wrapper #machine #work .item .retty {
+            width: 40%;
+            top: 22.5%;
+            left: 30%; }
+          body .right-wrapper #machine #foundation .item .stanford, body .right-wrapper #machine #training .item .stanford, body .right-wrapper #machine #work .item .stanford {
+            width: 30%;
+            top: 22.5%;
+            left: 35%; }
           body .right-wrapper #machine #foundation .item p, body .right-wrapper #machine #training .item p, body .right-wrapper #machine #work .item p {
-            color: black;
+            color: #173e43;
             display: inline-block;
-            width: 100%;
+            width: 80%;
             text-align: center;
-            font-size: 100%;
+            font-size: 110%;
             margin: 0;
             position: absolute;
-            left: 0;
-            top: 65%; }
+            left: 10%;
+            top: 60%; }
           body .right-wrapper #machine #foundation .item:hover .desc, body .right-wrapper #machine #training .item:hover .desc, body .right-wrapper #machine #work .item:hover .desc {
-            opacity: 0.8; }
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.8); }
           body .right-wrapper #machine #foundation .item .desc, body .right-wrapper #machine #training .item .desc, body .right-wrapper #machine #work .item .desc {
             position: absolute;
             top: 0;
@@ -359,32 +375,93 @@ body {
             height: 0;
             padding: 50% 0;
             border-radius: 50%;
-            background-color: #06090E;
+            background-color: transparent;
             opacity: 0;
             transition: 400ms;
             color: white; }
+            body .right-wrapper #machine #foundation .item .desc p, body .right-wrapper #machine #training .item .desc p, body .right-wrapper #machine #work .item .desc p {
+              color: white;
+              display: inline-block;
+              padding-left: 10%;
+              padding-right: 10%;
+              width: 80%;
+              text-align: center;
+              font-size: 100%;
+              margin: 0;
+              position: absolute;
+              left: 0; }
+            body .right-wrapper #machine #foundation .item .desc .title, body .right-wrapper #machine #training .item .desc .title, body .right-wrapper #machine #work .item .desc .title {
+              top: 10%; }
+            body .right-wrapper #machine #foundation .item .desc .detail, body .right-wrapper #machine #training .item .desc .detail, body .right-wrapper #machine #work .item .desc .detail {
+              top: 35%; }
+            body .right-wrapper #machine #foundation .item .desc hr, body .right-wrapper #machine #training .item .desc hr, body .right-wrapper #machine #work .item .desc hr {
+              color: white;
+              left: 20%;
+              width: 60%;
+              position: absolute;
+              top: 20%; }
     body .right-wrapper #education {
       height: 100vh;
-      color: black;
+      color: white;
       margin: 0;
-      background-image: url(../images/background_white_div.png);
-      background-size: cover;
-      height: 100vh;
+      background-color: #dddfd4;
       text-align: center;
       font-family: Avenir Next;
-      padding-top: 5%; }
+      position: relative;
+      transition: 800ms; }
       body .right-wrapper #education .project {
-        height: 29%;
+        height: 30%;
         width: 90%;
         margin-left: 5%;
-        margin-top: 3%;
-        background-color: green; }
+        position: absolute; }
         body .right-wrapper #education .project .desc {
+          position: relative;
+          opacity: 1;
           width: 40%;
           height: 100%;
-          background-color: yellow; }
-        body .right-wrapper #education .project image {
+          float: left; }
+          body .right-wrapper #education .project .desc .logo {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: 400ms; }
+          body .right-wrapper #education .project .desc h3 {
+            margin-top: 10%; }
+          body .right-wrapper #education .project .desc p, body .right-wrapper #education .project .desc hr {
+            margin-left: 10%;
+            width: 80%; }
+        body .right-wrapper #education .project img {
           width: 60%;
-          height: 100%; }
+          height: 100%;
+          object-fit: cover;
+          opacity: 1;
+          transition: 400ms; }
+        body .right-wrapper #education .project:nth-child(1) {
+          top: 2.5%; }
+          body .right-wrapper #education .project:nth-child(1) .desc {
+            background-image: url(../images/ryufellow-logo.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat; }
+        body .right-wrapper #education .project:nth-child(2) {
+          top: 35%; }
+          body .right-wrapper #education .project:nth-child(2) .desc {
+            background-image: url(../images/wsc-logo.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat; }
+        body .right-wrapper #education .project:nth-child(3) {
+          top: 67.5%; }
+          body .right-wrapper #education .project:nth-child(3) .desc {
+            background-image: url(../images/makeschool-logo.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat; }
+        body .right-wrapper #education .project:hover img {
+          opacity: 1; }
+        body .right-wrapper #education .project:hover .logo {
+          opacity: 1;
+          background-color: rgba(0, 0, 0, 0.8); }
 
 /*# sourceMappingURL=styles.css.map */

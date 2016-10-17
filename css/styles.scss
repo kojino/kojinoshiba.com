@@ -291,7 +291,7 @@ body {
           &:nth-child(1) {
             top: 4%;
             left: 4%;
-            background-image: url(../images/jiraffe.png);
+            background-image: url(../images/gradle.png);
             background-size:contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -308,7 +308,7 @@ body {
           &:nth-child(3) {
             left: 4%;
             bottom: 4%;
-            background-image: url(../images/jiraffe.png);
+            background-image: url(../images/coffeealum.png);
             background-size:contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -343,7 +343,7 @@ body {
             hr {
               width: 80%;
             }
-            p {
+            .detail {
               padding-top: 10%;
               padding-left: 15%;
               padding-right: 15%;

@@ -256,14 +256,14 @@ body {
           bottom: 0;
           height: 70%;
           width: 30%;
-          left: 54%;
-          background-image: url("../images/kojin_a.png");
+          left: 50%;
+          background-image: url("../images/kojin_b.png");
           background-size:contain;
           background-repeat: no-repeat;
           &:hover {
-            background-image: url("../images/kojin_b.png");
+            background-image: url("../images/kojin_a.png");
             background-size:contain;
-            left: 50%;
+            left: 54%;
           }
         }
         img {
